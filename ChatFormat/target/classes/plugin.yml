@@ -1,0 +1,17 @@
+name: ChatFormat
+version: 1.0-SNAPSHOT
+main: de.l4zs.chatformat.Main
+api-version: 1.13
+authors: [l4zs]
+description: Chat formatting and blacklist
+website: twitch.l4zs.de
+
+depend: [PlaceholderAPI]
+commands:
+  creload:
+    description: Reloads the config.
+    usage: /<command>
+  add:
+    description: add / set something.
+    usage: /<command>
+    aliases: [add, set]
