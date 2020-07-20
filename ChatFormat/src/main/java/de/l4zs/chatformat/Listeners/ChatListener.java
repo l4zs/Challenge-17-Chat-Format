@@ -33,7 +33,7 @@ public class ChatListener implements Listener {
         if (Settings.filter_enabled) {
             if (Settings.filter_replace_enabled) {
                 for (int i = 0; i < Settings.bad_words.size(); i++) {
-                    if (event.getMessage().contains(Settings.bad_words.get(i))) {
+                    if (event.getMessage().toLowerCase().contains(Settings.bad_words.get(i).toLowerCase())) {
                         StringBuilder replace = new StringBuilder();
                         for (int j = 0; j < Settings.bad_words.get(i).length(); j++) {
                             replace.append("*");
